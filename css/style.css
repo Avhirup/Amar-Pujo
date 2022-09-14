@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Comfortaa:wght@400;500;600;700&family=Great+Vibes&family=Monoton&family=Ms+Madi&family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500;1,700&family=Rampart+One&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    /* background: blue; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* justify-content: center; */
-}
 
 header{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navbar{
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    display: flex;
+    border-radius: 20px;
+    background: #eee;
 }
 
 .logo{
@@ -39,6 +42,8 @@ header{
     display: inline;
     font-size: 28.5px;
     color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Cinzel', serif;
 }
 
 .navbar-content{
@@ -49,13 +54,25 @@ header{
 
 .navbar-content a{
     text-decoration: none;
-    padding-right: 23px;
-    font-size: 25px;
+    font-size: 23px;
     color: #000000;
     font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Cinzel', serif;
+    padding: 5px 8px;
+    transition: 0.3s ease;
+}
+
+.navbar-content a:hover{
+    letter-spacing: 0.9px;
+    border: 1px solid #9581F4;
+    background: #9481f48e;
+    background: #3286f3e5;
+    border-radius: 30px;
 }
 
 .navbar-content li{
+    padding-right: 23px;
     list-style-type: none;
 }
 
@@ -71,9 +88,9 @@ section{
     /* border: 2px solid black; */
     margin-top: 23px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    
+    flex-direction: column;
 }
 
 .gradient {
@@ -82,12 +99,14 @@ section{
     height: 21vw;
     background: linear-gradient(-45deg, #ee7752,#e73c7e, #9581F4, #23a6d5, #23d5ab); 
     background-size: 400% 400%; 
+    background-size: 200% 200%; 
     animation: gradient 20s ease-out infinite;
     border-radius: 30px 30px 90px 30px;
     box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.575);
 
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
+    align-items: center;
 }
 
 @keyframes gradient {
@@ -108,13 +127,23 @@ section{
 .gradient-content{
     /* border: 2px solid red; */
     margin: 10px 60px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
-.gradient-content p{
-    font-size: 55px;
-    letter-spacing: 1.5px;
+.gradient-text{
+    font-size: 52px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 2px;
+    font-family: 'Nunito', sans-serif;
+
+    font-family: 'Great Vibes', cursive;
+
+    font-family: 'Rampart One', cursive;
+
+    color: #000000;
+
 }
 
 .gradient-content button{
@@ -130,11 +159,12 @@ section{
 .gradient-content span{
     text-align:center;
     vertical-align:text-middle;
-    font-size:30px;
-    font-family:Khula;
+    font-size:26.4px;
+    font-family: 'Nunito', sans-serif;
     line-height:auto;
     color:#000000;
 }
+
 
 #south{
     background-color:#fff6bf;
@@ -156,5 +186,78 @@ section{
 
 .gradient-img{
     /* border: 2px solid red; */
-    margin: 0px 80px;
+    margin-right: 114px;
+}
+
+.gradient-img img{
+    height: 289px;
+}
+
+
+.heading{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Cinzel', serif;
+}
+
+
+.top-puja{
+    /* border: 2px solid blue; */
+    box-shadow: 0px 10px 20px rgba(26, 25, 25, 0.35);
+    /* box-shadow: 0px 0px 15px rgba(17, 17, 17, 0.575); */
+    border-radius: 20px;
+    height: 24vw;
+    width: 90%;
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #eee;
+}
+
+
+.news-box{
+    /* border: 2px solid blue; */
+    height: 95%;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.news-box a{
+    text-decoration: none;
+    padding: 11px 13px;
+    /* border: 3px solid red; */
+    border-radius: 0px 0px 20px 20px;
+    color: #fff;
+    background: #0c0c0ca8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.news-box a:hover{
+    background: #6b6b6ba8;
+}
+
+#box1{
+    background-image: url("https://www.oneindia.com/img/2019/09/durga-1568460549.jpg");
+    opacity: 0.9;
+}
+
+#box2{
+    background-image: url("https://media.istockphoto.com/photos/durga-puja-festival-picture-id461790589?k=20&m=461790589&s=612x612&w=0&h=sPqSQy4lHExPpt2ATTngskzVciiUaK8smtf6RJqNzrA=");
+    opacity: 0.9;
+}
+
+#box3{
+    background-image: url("https://media.istockphoto.com/photos/priest-worshipping-goddess-durga-durga-puja-festival-celebration-picture-id1044388000?k=20&m=1044388000&s=612x612&w=0&h=10JQfRbZntezg6J3JCiMcMlXYo0oYGK-nDhdap7ZoQc=");
+    opacity: 0.9;
+}
+
+.about-us{
+    height: 40vh;
 }
