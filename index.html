@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/durga.png">
-    <title>Durga</title>
+    <link rel="icon" href="images/durga1.png">
+    <title>Amar Pujo</title>
 </head>
 <body>
     <!-- ********************************************** Header *********************************************** -->
@@ -14,7 +22,7 @@
         <nav class="navbar">
             <div class="logo">
                 <img class="image10" src="images/logo1.png" alt="logo">
-                <p class="logo-name">SubPujo</p>
+                <p class="logo-name">আমার পুজো</p>
             </div>
             <ul class="navbar-content">
                 <li>
@@ -43,34 +51,99 @@
                 <p class="gradient-text">Find your Durga<br> Puja Destiny with us</p>
 
                 <div class="gradient-button">
-                    <button id="south"><span>South</span></button>
-                    <button id="north"><span>North</span></button>
+                    <a href="south.html"><button id="south"><span>South</span></button></a>
+                    <a href="north.html"><button id="north"><span>North</span></button></a>
                 </div>
         
             </div>
 
             <div class="gradient-img">
-                <img src="images/durga1.png" alt="">
+                <img src="images/durga2.png" alt="">
             </div>
         </div>
 
         <!-- ------------- section 2 ---------------- -->
-        <h2 class="heading">
-            Top Pujas
-        </h2>
+        <div class="section-2">
 
-        <div class="top-puja">
+            <h2 class="heading">
+                Top Puja Lists
+            </h2>
+            <p class="sub-heading">
+                Top pujas are rated by public and news reports.
+            </p>
+    
+            <div class="top-puja">
+                <div class="top-puja-logo">
+                    <img src="images/dhak.png" alt="image">
+                </div>
+                
+                <!--
+                <div class="news">
+                    <div class="news-box" id="box1">
+                        <a href="https://bengali.abplive.com/district/purba-bardhaman/durga-puja-2022-east-burdwan-tradition-uninterrupted-in-sat-bhai-er-pujo-know-the-history-920282">Durga Puja 2022 : ৪০০ বছরের ট্র্যাডিশন মেনে আজও সাড়ম্বরে পালিত 'সাত ভাইয়ের পুজো', কেন এমন নাম</a>
+                    </div>
+        
+                    <div class="news-box" id="box2">
+                        <a href="https://bangla.aajtak.in/world/video/durga-puja-2022-america-new-jersey-city-trinayani-club-starts-24-september-abroad-durga-puja-suk-suc-446683-2022-09-13">Durga Puja 2022: অক্টোবরে নয়, সেপ্টেম্বরে দুর্গাপুজো; ইতিহাস গড়ছেন নিউ জার্সির একঝাঁক বাঙালি</a>
+                    </div>
+        
+                    <div class="news-box" id="box3">
+                        <a href="https://indianexpress.com/article/cities/kolkata/kolkata-curtains-down-on-durga-puja-with-grand-immersion-carnival-5415167">Kolkata: Curtains down on Durga Puja with grand immersion carnival</a>
+                    </div>
+                </div>
+                --> 
+                <!-- Swiper -->
+                
+                <!-- <div class="swiper-container news"> -->
+                <div class="swiper-container news">
+                    <div class="swiper-wrapper">
 
-            <div class="news-box" id="box1">
-                <a href="https://bengali.abplive.com/district/purba-bardhaman/durga-puja-2022-east-burdwan-tradition-uninterrupted-in-sat-bhai-er-pujo-know-the-history-920282">Durga Puja 2022 : ৪০০ বছরের ট্র্যাডিশন মেনে আজও সাড়ম্বরে পালিত 'সাত ভাইয়ের পুজো', কেন এমন নাম</a>
-            </div>
+                        <div class="swiper-slide">
+                            <img src="images/news1.jpg" alt="image" />
+                            <div class="info">
+                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                            </div>
+                        </div>
 
-            <div class="news-box" id="box2">
-                <a href="https://bangla.aajtak.in/world/video/durga-puja-2022-america-new-jersey-city-trinayani-club-starts-24-september-abroad-durga-puja-suk-suc-446683-2022-09-13">Durga Puja 2022: অক্টোবরে নয়, সেপ্টেম্বরে দুর্গাপুজো; ইতিহাস গড়ছেন নিউ জার্সির একঝাঁক বাঙালি</a>
-            </div>
+                        <div class="swiper-slide">
+                            <img src="images/news2.jpg" alt="image" />
+                            <div class="info">
+                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                            </div>
+                        </div>
+                            
+                        <div class="swiper-slide">
+                            <img src="images/news1.jpg" alt="image" />
+                            <div class="info">
+                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="images/news3.jpg" alt="image" />
+                            <div class="info">
+                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                            </div>
+                        </div>
 
-            <div class="news-box" id="box3">
-                <a href="https://indianexpress.com/article/cities/kolkata/kolkata-curtains-down-on-durga-puja-with-grand-immersion-carnival-5415167">Kolkata: Curtains down on Durga Puja with grand immersion carnival</a>
+                        <div class="swiper-slide">
+                            <img src="images/news1.jpg" alt="image" />
+                            <div class="info">
+                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="images/news3.jpg" alt="image" />
+                            <div class="info">
+                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
             </div>
 
         </div>
@@ -78,22 +151,121 @@
         <!-- ------------- section 3 ---------------- -->
         <div class="about-us">
             <div class="about-img">
-
+                <img src="images/durga.png" alt="image">
             </div>
 
             <div class="about-content">
-                <h2 class="about-heading heading"></h2>
+                <h2 class="about-heading heading"> How we can help you</h2>
                 <div class="about-manual">
-                    <span>point 1</span>
-                    <span>point 2</span>
-                    <span>point 3</span>
+                    <div class="heading-1">
+                        <i class="fa-solid fa-signs-post"></i>
+                        <h3>Heading 1</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugit recusandae cum soluta laborum neque obcaecati necessitatibus nam dolorem ducimus.</p>
+                    <div class="heading-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Heading 2</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugit recusandae cum soluta laborum neque obcaecati necessitatibus nam dolorem ducimus.</p>
+                    <div class="heading-1">
+                        <i class="fa-solid fa-train-subway"></i>
+                        <h3>Heading 3</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores fugit recusandae cum soluta laborum neque obcaecati necessitatibus nam dolorem ducimus.</p>
                 </div>
             </div>
         </div>
 
+        <!-- ------------- section 4 ---------------- -->
+        <div class="greeting">
+            <h1 class="heading">
+                আনন্দে 
+                <br>
+                কাটুক শারদ
+                <br>
+                বেলা</h1>
+        </div>
 
     </section>
 
+<!-- *************************************************** Footer ********************************************** -->
+    <footer class="main-footer">    
+        <img src="images/footer-img.png" alt="image">
+        <div class="footer-content">
+            <!-- <div class="col-1">
+                <h3>Useful Links</h3>
+                <a href="creator.html">Creators</a>
+                <a href="index.html">Go to</a>
+                <a href="#">South</a>
+                <a href="#">North</a>
+            </div> -->
+            <div class="col-2">
+                <h3>Have Questions ?</h3>
+                <form>
+                    <input type="text" placeholder="Ask anything" required>
+                    <br>
+                    <input type="email" placeholder="Valid Email Address" required>
+                    <br>
+                    <button type="send">Send</button>
+                </form>
+            </div>
+            <!-- <div class="col-3">
+                <h3>Contact</h3>
+                <p>New Town Rd, Action Area III,<br> Newtown, Kolkata, INDIA</p>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div> -->
+        </div>
 
+    </footer>
+
+    <div class="copyright">
+        <p>
+            Copyright &copy; 2022 - All rights reserved
+        </p>
+    </div>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 'auto',
+          spaceBetween: 40,
+          centeredSlides: true,
+          grabCursor: true,
+          loop: false,
+          pagination: {
+            el: ".swiper-pagination-",
+            clickable: true,
+          },
+        //   navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        //   },
+        });
+
+        // Javascript for to-top button
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        })
+      </script>
 </body>
 </html>

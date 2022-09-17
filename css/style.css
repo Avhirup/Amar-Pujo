@@ -21,7 +21,7 @@ header{
     margin-top: 10px;
     display: flex;
     border-radius: 20px;
-    background: #eee;
+    /* background: #eee; */
 }
 
 .logo{
@@ -41,9 +41,13 @@ header{
 .logo-name{
     display: inline;
     font-size: 28.5px;
-    color: #000000;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Cinzel', serif;
+
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, rgb(238, 9, 121) 0%, rgb(255, 106, 0) 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: 400;
 }
 
 .navbar-content{
@@ -58,17 +62,17 @@ header{
     color: #000000;
     font-family: 'Poppins', sans-serif;
     font-family: 'Nunito', sans-serif;
-    font-family: 'Cinzel', serif;
     padding: 5px 8px;
     transition: 0.3s ease;
 }
 
 .navbar-content a:hover{
-    letter-spacing: 0.9px;
+    letter-spacing: 0;
     border: 1px solid #9581F4;
     background: #9481f48e;
-    background: #3286f3e5;
-    border-radius: 30px;
+    background: #5ea1f8e5;
+    border-radius: 27px;
+    border: none;
 }
 
 .navbar-content li{
@@ -96,12 +100,12 @@ section{
 .gradient {
     /* border: 2px solid blue; */
     width: 91vw;
-    height: 21vw;
+    height: 24vw;
     background: linear-gradient(-45deg, #ee7752,#e73c7e, #9581F4, #23a6d5, #23d5ab); 
     background-size: 400% 400%; 
     background-size: 200% 200%; 
     animation: gradient 20s ease-out infinite;
-    border-radius: 30px 30px 90px 30px;
+    border-radius: 90px 90px 200px 90px;
     box-shadow: 0px 0px 20px rgba(17, 17, 17, 0.575);
 
     display: flex;
@@ -190,27 +194,54 @@ section{
 }
 
 .gradient-img img{
-    height: 289px;
+    height: 375px;
 }
 
-
+.section-2{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+}
 .heading{
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-size: 36px;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Cinzel', serif;
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
 }
 
+.sub-heading{
+    font-size: 20px;
+    color: rgb(128, 128, 128);
+    font-family: 'Poppins', sans-serif;
+}  
 
 .top-puja{
-    /* border: 2px solid blue; */
-    box-shadow: 0px 10px 20px rgba(26, 25, 25, 0.35);
-    /* box-shadow: 0px 0px 15px rgba(17, 17, 17, 0.575); */
+    display: grid;
+    grid-template-columns: 20% 75%;
+    grid-column-gap: 2em;
+    /* border: 2px solid red; */
+    margin-top: 14px;
+    height: 290px;
+}
+
+.top-puja-logo{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-puja-logo img{
+    height: 270px;
+}
+
+/*
+.news{
     border-radius: 20px;
     height: 24vw;
     width: 90%;
-    
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-column-gap: 1em;
@@ -222,7 +253,6 @@ section{
 
 
 .news-box{
-    /* border: 2px solid blue; */
     height: 95%;
     border-radius: 20px;
     display: flex;
@@ -232,7 +262,6 @@ section{
 .news-box a{
     text-decoration: none;
     padding: 11px 13px;
-    /* border: 3px solid red; */
     border-radius: 0px 0px 20px 20px;
     color: #fff;
     background: #0c0c0ca8;
@@ -260,4 +289,249 @@ section{
 
 .about-us{
     height: 40vh;
+}
+
+*/
+
+/* added later  */
+.swiper-container{
+    /* border: 2px solid red */
+    /* margin-top: 15px; */
+    /* height: 320px; */
+    border-radius: 7px;
+    overflow: hidden;
+    background: #eee;
+}
+
+.swiper-wrapper{
+    align-items: center;
+}
+
+.swiper-slide{
+    box-shadow:0px 10px 10px rgba(26, 25, 25, 0.35);
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.swiper-slide img{
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.info{
+    width: 100%;
+    padding: 4px 0;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    text-align: justify;
+    border-radius: 0 0 7px 7px;
+    display: flex;
+    overflow: hidden;
+}
+
+.info a{
+    color: rgba(255, 255, 255, 0.548);
+    text-decoration: none;
+    float: right;
+    margin-right: 7px;
+    margin-top: -28px;;
+    font-size: 13px;
+    padding: 2px 8px;
+}
+
+.info a:hover{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.info:hover{
+    border: 1px solid #fff;
+    border-radius: 0 0 7px 7px;
+}
+
+
+/* ********************************************** about-us ********************************************* */
+.about-us{
+    /* border: 2px solid black; */
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 35% 64%;
+    grid-column-gap: 1em;
+    width: 92%;
+}
+
+.about-img{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+.about-img img{
+    height: 320px;
+}
+
+.about-content{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.about-manual{
+    /* border: 2px solid green; */
+}
+
+.heading-1 i{
+    display: inline;
+}
+.heading-1 h3{
+    display: inline;
+}
+
+/* ********************************************** greetings ********************************************* */
+.greeting{
+    margin-top: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+.greeting h1{
+    color: #000000;
+    font-size: 3rem;
+}
+
+/* ********************************************** greetings ********************************************* */
+.main-footer{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+
+.main-footer img{
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    /* z-index: 999; */
+}
+
+.footer-content{
+    width: 100%;
+    background: #000000;
+    padding: 20px 10px;
+}
+
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Footer @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* ################ column 2 ################## */
+.col-2{
+    text-align: center;
+}
+.col-2 from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2 h3{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer div h3 {
+    text-transform: uppercase;
+    font-weight: 500;   
+    margin-bottom: 30px;
+    letter-spacing: 1px;    
+}
+
+
+.col-2 form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 22px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+}
+.col-2 form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #FFF;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.col-2 form button:hover {
+    background: #1768f5;
+    background: #5ea1f8e5;
+    letter-spacing: 1px;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Copyright section @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+.copyright {
+    background: rgb(24, 24, 24);
+}
+/*
+.copyright p {
+    height: 40px;
+    display: flex;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+.copyright p{
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ To-Top button @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+html {
+    scroll-behavior: smooth;
+  }
+
+.to-top {
+    background: #fff;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
