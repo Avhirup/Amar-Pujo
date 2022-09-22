@@ -13,7 +13,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/durga1.png">
+    <link rel="icon" href="images/dhak.png">
     <title>Amar Pujo</title>
 </head>
 <body>
@@ -22,10 +22,23 @@
         <nav class="navbar">
             <div class="logo">
                 <img class="image10" src="images/logo1.png" alt="logo">
-                <p class="logo-name">আমার পুজো</p>
+                <a href="index.html"><p class="logo-name">আমার পুজো</p></a>
             </div>
+        
             <ul class="navbar-content">
-                <li>
+                <div class="hide">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Top Pujas</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+
+                </div>
+                <!-- <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
@@ -33,11 +46,35 @@
                 </li>
                 <li>
                     <a href="#">About Us</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#">Contact Us</a>
+                    <!-- <a href="#">Contact Us</a> -->
+                    <div class="search-bar">
+                        <div class="search-icon">
+                            <!-- <i class="fa-solid fa-street-view search-i search"></i> -->
+                            <p class="search-i search">Start Exploring</p>
+                            <!-- <i id="enteroLcation" class="fa-solid fa-magnifying-glass active-btn"></i> -->
+                            <i class="fa-solid fa-magnifying-glass enteroLcation active-btn"></i>
+                        </div>
+                        <input id="search-input-bar" class="search-input" type="text" placeholder="Enter where you are standing ..." required>
+                        <div class="red">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
                 </li>
             </ul>
+       <!--
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fa-solid fa-street-view search-i search"></i>
+                    <i id="enteroLcation" class="fa-solid fa-magnifying-glass active-btn"></i>
+                </div>
+                <input id="search-input-bar" class="search-input" type="text">
+                <div class="red">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        -->
         </nav>
     </header>
 
@@ -65,93 +102,133 @@
         <!-- ------------- section 2 ---------------- -->
         <div class="section-2">
 
-            <h2 class="heading">
-                Top Puja Lists
-            </h2>
-            <p class="sub-heading">
-                Top pujas are rated by public and news reports.
-            </p>
-    
-            <div class="top-puja">
-                <div class="top-puja-logo">
-                    <img src="images/dhak.png" alt="image">
-                </div>
+                    <h2 class="heading">
+                        Top Puja Lists
+                    </h2>
+                    <p class="sub-heading">
+                        Top pujas are rated by public and news reports.
+                    </p>
+            
+                    <div class="top-puja">
+                        <div class="top-puja-logo">
+                            <img src="images/dhak.png" alt="image">
+                        </div>
+                        
+                        <!--
+                        <div class="news">
+                            <div class="news-box" id="box1">
+                                <a href="https://bengali.abplive.com/district/purba-bardhaman/durga-puja-2022-east-burdwan-tradition-uninterrupted-in-sat-bhai-er-pujo-know-the-history-920282">Durga Puja 2022 : ৪০০ বছরের ট্র্যাডিশন মেনে আজও সাড়ম্বরে পালিত 'সাত ভাইয়ের পুজো', কেন এমন নাম</a>
+                            </div>
                 
-                <!--
-                <div class="news">
-                    <div class="news-box" id="box1">
-                        <a href="https://bengali.abplive.com/district/purba-bardhaman/durga-puja-2022-east-burdwan-tradition-uninterrupted-in-sat-bhai-er-pujo-know-the-history-920282">Durga Puja 2022 : ৪০০ বছরের ট্র্যাডিশন মেনে আজও সাড়ম্বরে পালিত 'সাত ভাইয়ের পুজো', কেন এমন নাম</a>
-                    </div>
-        
-                    <div class="news-box" id="box2">
-                        <a href="https://bangla.aajtak.in/world/video/durga-puja-2022-america-new-jersey-city-trinayani-club-starts-24-september-abroad-durga-puja-suk-suc-446683-2022-09-13">Durga Puja 2022: অক্টোবরে নয়, সেপ্টেম্বরে দুর্গাপুজো; ইতিহাস গড়ছেন নিউ জার্সির একঝাঁক বাঙালি</a>
-                    </div>
-        
-                    <div class="news-box" id="box3">
-                        <a href="https://indianexpress.com/article/cities/kolkata/kolkata-curtains-down-on-durga-puja-with-grand-immersion-carnival-5415167">Kolkata: Curtains down on Durga Puja with grand immersion carnival</a>
-                    </div>
-                </div>
-                --> 
-                <!-- Swiper -->
+                            <div class="news-box" id="box2">
+                                <a href="https://bangla.aajtak.in/world/video/durga-puja-2022-america-new-jersey-city-trinayani-club-starts-24-september-abroad-durga-puja-suk-suc-446683-2022-09-13">Durga Puja 2022: অক্টোবরে নয়, সেপ্টেম্বরে দুর্গাপুজো; ইতিহাস গড়ছেন নিউ জার্সির একঝাঁক বাঙালি</a>
+                            </div>
                 
-                <!-- <div class="swiper-container news"> -->
-                <div class="swiper-container news">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <img src="images/news1.jpg" alt="image" />
-                            <div class="info">
-                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                            <div class="news-box" id="box3">
+                                <a href="https://indianexpress.com/article/cities/kolkata/kolkata-curtains-down-on-durga-puja-with-grand-immersion-carnival-5415167">Kolkata: Curtains down on Durga Puja with grand immersion carnival</a>
                             </div>
                         </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/news2.jpg" alt="image" />
-                            <div class="info">
-                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
-                            </div>
-                        </div>
-                            
-                        <div class="swiper-slide">
-                            <img src="images/news1.jpg" alt="image" />
-                            <div class="info">
-                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                        --> 
+                        <!-- Swiper -->
+                        
+                        <!-- <div class="swiper-container news"> -->
+                        <div class="swiper-container news">
+                            <div class="swiper-wrapper">
+        
+                                <div class="swiper-slide">
+                                    <img src="images/news1.jpg" alt="image" />
+                                    <div class="info">
+                                        <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <img src="images/home/news1.jpg" alt="image" />
+                                    <div class="info">
+                                        <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <img src="images/news3.jpg" alt="image" />
+                                    <div class="info">
+                                        <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                                    </div>
+                                </div>
+        
+                                <div class="swiper-slide">
+                                    <img src="images/home/news2.jpg" alt="image" />
+                                    <div class="info">
+                                        <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                                    </div>
+                                </div>
+                                    
+                                <div class="swiper-slide">
+                                    <img src="images/home/news1.jpg" alt="image" />
+                                    <div class="info">
+                                        <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <img src="images/news3.jpg" alt="image" />
+                                    <div class="info">
+                                        <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
+                                    </div>
+                                </div>
+        
                             </div>
                         </div>
                         
-                        <div class="swiper-slide">
-                            <img src="images/news3.jpg" alt="image" />
-                            <div class="info">
-                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/news1.jpg" alt="image" />
-                            <div class="info">
-                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="images/news3.jpg" alt="image" />
-                            <div class="info">
-                                <a href="#"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate molestias laudantium suscipit tempora excepturi eius!</p></a>
-                            </div>
-                        </div>
-
+                        
                     </div>
-                </div>
-                
-                
+        
+        </div>
+
+        <!-- ------------- calendar-section ---------------- -->
+        <div class="calendar-section">
+
+            <div class="days">
+                <!-- <p id="dayCount">পুজোর আর মাত্র ৩ দিন বাকি</p> -->
             </div>
 
+            <div class="calender">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide-custom">
+                            <img src="images/sep1.png" class="calender-img" alt="calender image">
+                        </div>
+                        <div class="swiper-slide swiper-slide-custom">
+                            <img src="images/oct1.png" class="calender-img" alt="calender image">
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                    <div class="swiper-pagination swiper-pagination-custom"></div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ------------- location-section ---------------- -->
+        <div class="location-section">
+            <div class="location-content">
+
+                <input class="location-input" type="text" placeholder="Enter where you are standing ..." required>
+                <i class="fa-solid fa-magnifying-glass location2"></i>
+
+            </div>
+            <div class="location-vid">
+                <video src="video/location-vid.mp4" id="location-video" autoplay muted loop></video>
+            </div>
         </div>
 
         <!-- ------------- section 3 ---------------- -->
         <div class="about-us">
             <div class="about-img">
-                <img src="images/durga.png" alt="image">
+                <img src="images/home/about-img.png" alt="image">
             </div>
 
             <div class="about-content">
@@ -245,7 +322,7 @@
           spaceBetween: 40,
           centeredSlides: true,
           grabCursor: true,
-          loop: false,
+          loop: Infinity,
           pagination: {
             el: ".swiper-pagination-",
             clickable: true,
@@ -266,6 +343,22 @@
             toTop.classList.remove("active");
         }
         })
+    </script>
+
+    <!-- Initialize Swiper2 -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
       </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
