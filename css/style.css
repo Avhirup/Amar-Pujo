@@ -472,62 +472,6 @@ section{
     height: 270px;
 }
 
-/*
-.news{
-    border-radius: 20px;
-    height: 24vw;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 1em;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    background: #eee;
-}
-
-
-.news-box{
-    height: 95%;
-    border-radius: 20px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.news-box a{
-    text-decoration: none;
-    padding: 11px 13px;
-    border-radius: 0px 0px 20px 20px;
-    color: #fff;
-    background: #0c0c0ca8;
-    font-family: 'Poppins', sans-serif;
-}
-
-.news-box a:hover{
-    background: #6b6b6ba8;
-}
-
-#box1{
-    background-image: url("https://www.oneindia.com/img/2019/09/durga-1568460549.jpg");
-    opacity: 0.9;
-}
-
-#box2{
-    background-image: url("https://media.istockphoto.com/photos/durga-puja-festival-picture-id461790589?k=20&m=461790589&s=612x612&w=0&h=sPqSQy4lHExPpt2ATTngskzVciiUaK8smtf6RJqNzrA=");
-    opacity: 0.9;
-}
-
-#box3{
-    background-image: url("https://media.istockphoto.com/photos/priest-worshipping-goddess-durga-durga-puja-festival-celebration-picture-id1044388000?k=20&m=1044388000&s=612x612&w=0&h=10JQfRbZntezg6J3JCiMcMlXYo0oYGK-nDhdap7ZoQc=");
-    opacity: 0.9;
-}
-
-.about-us{
-    height: 40vh;
-}
-
-*/
-
 /* added later  */
 .swiper-container{
     /* border: 2px solid red */
@@ -535,7 +479,6 @@ section{
     /* height: 320px; */
     border-radius: 22px;
     overflow: hidden;
-    /* background: #eee; */
     box-shadow: -1px 5px 12px -2px #6161618f;
     background: linear-gradient(118deg, #e1d8fe 0, #ddf6f2 30%, #f7ebff 84%);
     background: linear-gradient(131deg, #ECB9FE 0, #f6deb4 30%, #9cbdffe1 84%);
