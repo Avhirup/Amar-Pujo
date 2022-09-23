@@ -13,13 +13,13 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/dhak.png">
+    <link rel="icon" href="images/dhak0.png">
     <title>Amar Pujo</title>
 </head>
 <body>
     <!-- ********************************************** Header *********************************************** -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="header">
             <div class="logo">
                 <img class="image10" src="images/logo1.png" alt="logo">
                 <a href="index.html"><p class="logo-name">আমার পুজো</p></a>
@@ -28,32 +28,28 @@
             <ul class="navbar-content">
                 <div class="hide">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="#header">Home</a>
                     </li>
                     <li>
-                        <a href="#">Top Pujas</a>
+                        <a href="#TopPujas">Top Pujas</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="#AboutUs">About Us</a>
                     </li>
 
+                    <!-- <li>
+                        <a href="#yourLocation" class="explore">Start Exploring</a>
+                    </li> -->
+
+                    
+
                 </div>
-                <!-- <li>
-                    <a href="index.html">Home</a>
-                </li>
                 <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li> -->
-                <li>
-                    <!-- <a href="#">Contact Us</a> -->
                     <div class="search-bar">
                         <div class="search-icon">
-                            <!-- <i class="fa-solid fa-street-view search-i search"></i> -->
-                            <p class="search-i search">Start Exploring</p>
-                            <!-- <i id="enteroLcation" class="fa-solid fa-magnifying-glass active-btn"></i> -->
+                            <a href="#yourLocation">Start Exploring</a>
+                            <!-- <p class="search-i search">Start Exploring</p> -->
+                            
                             <i class="fa-solid fa-magnifying-glass enteroLcation active-btn"></i>
                         </div>
                         <input id="search-input-bar" class="search-input" type="text" placeholder="Enter where you are standing ..." required>
@@ -63,18 +59,6 @@
                     </div>
                 </li>
             </ul>
-       <!--
-            <div class="search-bar">
-                <div class="search-icon">
-                    <i class="fa-solid fa-street-view search-i search"></i>
-                    <i id="enteroLcation" class="fa-solid fa-magnifying-glass active-btn"></i>
-                </div>
-                <input id="search-input-bar" class="search-input" type="text">
-                <div class="red">
-                    <i class="fa-solid fa-xmark"></i>
-                </div>
-            </div>
-        -->
         </nav>
     </header>
 
@@ -100,7 +84,7 @@
         </div>
 
         <!-- ------------- section 2 ---------------- -->
-        <div class="section-2">
+        <div class="section-2" id="TopPujas">
 
                     <h2 class="heading">
                         Top Puja Lists
@@ -213,7 +197,7 @@
 
 
         <!-- ------------- location-section ---------------- -->
-        <div class="location-section">
+        <div class="location-section" id="yourLocation">
             <div class="location-content">
 
                 <input class="location-input" type="text" placeholder="Enter where you are standing ..." required>
@@ -226,7 +210,7 @@
         </div>
 
         <!-- ------------- section 3 ---------------- -->
-        <div class="about-us">
+        <div class="about-us" id="AboutUs">
             <div class="about-img">
                 <img src="images/home/about-img.png" alt="image">
             </div>
@@ -357,8 +341,8 @@
             prevEl: ".swiper-button-prev",
           },
         });
-      </script>
+    </script>
 
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

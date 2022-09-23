@@ -1,4 +1,4 @@
-const locationBtn = document.querySelector(".search");
+// const locationBtn = document.querySelector(".search");
 const searchBar = document.querySelector("#search-input-bar");
 const searchIcon = document.querySelector(".search-i");
 const activeBtn = document.querySelector(".active-btn");
@@ -6,6 +6,7 @@ const cross = document.querySelector(".red");
 const searchBox = document.querySelector(".search-bar");
 const hide = document.querySelector(".hide");
 
+/*
 locationBtn.addEventListener("click", ()=>{
     // locationBtn.classList.toggle("active");
     // searchBar.classList.toggle("active");
@@ -17,7 +18,7 @@ locationBtn.addEventListener("click", ()=>{
     searchBox.classList.add('active');
     hide.classList.add('active');
 });
-
+*/
 cross.addEventListener("click", ()=>{
     locationBtn.classList.remove('active');
     searchBar.classList.remove('active');
@@ -84,6 +85,5 @@ const Countday = Math.ceil(time / (1000 * 60 * 60 * 24));
 
 
 const dayCount = document.querySelector('.days');
-// dayCount.innerHTML = `<p id="dayCount">পুজোর আর মাত্র ${Countday} দিন বাকি</p>`;
-console.log(dayCount);
+dayCount.innerHTML = `<p id="dayCount">পুজোর আর মাত্র ${Countday} দিন বাকি</p>`;
 
