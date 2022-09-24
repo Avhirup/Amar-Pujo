@@ -85,5 +85,5 @@ const Countday = Math.ceil(time / (1000 * 60 * 60 * 24));
 
 
 const dayCount = document.querySelector('.days');
-dayCount.innerHTML = `<p id="dayCount">পুজোর আর মাত্র ${Countday} দিন বাকি</p>`;
+dayCount.innerHTML = `<p id="dayCount">শুভ মহালয়া</p><br><p id="dayCount">পুজোর আর মাত্র ${Countday} দিন বাকি</p>`;
 
