@@ -13,19 +13,33 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/durga1.png">
+    <link rel="stylesheet" href="css/south.css">
+    <link rel="icon" href="images/dhak0.png">
     <title>Amar Pujo</title>
 </head>
 <body>
     <!-- ********************************************** Header *********************************************** -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="header">
             <div class="logo">
                 <img class="image10" src="images/logo1.png" alt="logo">
-                <p class="logo-name">আমার পুজো</p>
+                <a href="index.html"><p class="logo-name">আমার পুজো</p></a>
             </div>
+        
             <ul class="navbar-content">
-                <li>
+                <div class="hide">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#TopPujas">Top Pujas</a>
+                    </li>
+                    <li>
+                        <a href="index.html#AboutUs">About Us</a>
+                    </li>
+
+                </div>
+                <!-- <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
@@ -33,59 +47,72 @@
                 </li>
                 <li>
                     <a href="#">About Us</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#">Contact Us</a>
+                    <!-- <a href="#">Contact Us</a> -->
+                    <div class="search-bar">
+                        <div class="search-icon">
+                            <!-- <i class="fa-solid fa-street-view search-i search"></i> -->
+                            <p class="search-i search">Start Exploring</p>
+                            <!-- <i id="enteroLcation" class="fa-solid fa-magnifying-glass active-btn"></i> -->
+                            <i class="fa-solid fa-magnifying-glass enteroLcation active-btn"></i>
+                        </div>
+                        <input id="search-input-bar" class="search-input" type="text" placeholder="Enter where you are standing ..." required>
+                        <div class="red">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
                 </li>
             </ul>
+       <!--
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fa-solid fa-street-view search-i search"></i>
+                    <i id="enteroLcation" class="fa-solid fa-magnifying-glass active-btn"></i>
+                </div>
+                <input id="search-input-bar" class="search-input" type="text">
+                <div class="red">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        -->
         </nav>
     </header>
 
     <!-- *************************************************** Content ********************************************** -->
-    <div class="greeting">
-        <h1 class="heading">
-            Coming Soon all North Locations
+    <div class="colors">
+        <img src="images/yellow.png" alt="image" id="img1">
+        <img src="images/violet.png" alt="image" id="img2">
     </div>
-    <div class="greeting">
-        <h1 class="heading">
-            আনন্দে 
-            <br>
-            কাটুক শারদ
-            <br>
-            বেলা</h1>
-    </div>
+    <!-- ************** main-section **************** -->
+    <section>
+        <div class="container">
+            <div class="list">
+                
+            </div>
+            <div class="container-img">
+                <img src="images/south-img.png" alt="image">
+            </div>
+        </div>
+    </section>
 
 <!-- *************************************************** Footer ********************************************** -->
     <footer class="main-footer">    
         <img src="images/footer-img.png" alt="image">
         <div class="footer-content">
-            <!-- <div class="col-1">
-                <h3>Useful Links</h3>
-                <a href="creator.html">Creators</a>
-                <a href="index.html">Go to</a>
-                <a href="#">South</a>
-                <a href="#">North</a>
-            </div> -->
-            <div class="col-2">
-                <h3>Have Questions ?</h3>
-                <form>
-                    <input type="text" placeholder="Ask anything" required>
-                    <br>
-                    <input type="email" placeholder="Valid Email Address" required>
-                    <br>
-                    <button type="send">Send</button>
-                </form>
+            <div class="footer-sec1">
+                <p class="footer-sec-heading">Features</p>
+                <a href="south.html">South Kolkata Pujas</a>
+                <a href="north.html">North Kolkata Pujas</a>
+                <a href="#yourLocation">Pujas in your area</a>
             </div>
-            <!-- <div class="col-3">
-                <h3>Contact</h3>
-                <p>New Town Rd, Action Area III,<br> Newtown, Kolkata, INDIA</p>
-                <div class="media-icons">
-                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div> -->
+                
+            <div class="footer-sec2">
+                <p class="footer-sec-heading">Important links</p>
+                <a href="#">Feedback</a>
+                <a href="#">Upload your Durga Puja story</a>
+                <a href="#">Contact us</a>
+            </div>
         </div>
 
     </footer>
@@ -96,9 +123,14 @@
         </p>
     </div>
 
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
     
     <!-- Initialize Swiper -->
     <script>
@@ -107,7 +139,7 @@
           spaceBetween: 40,
           centeredSlides: true,
           grabCursor: true,
-          loop: false,
+          loop: Infinity,
           pagination: {
             el: ".swiper-pagination-",
             clickable: true,
@@ -117,6 +149,33 @@
         //     prevEl: ".swiper-button-prev",
         //   },
         });
-      </script>
+
+        // Javascript for to-top button
+        const toTop = document.querySelector(".to-top");
+
+        window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+        })
+    </script>
+
+    <!-- Initialize Swiper2 -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

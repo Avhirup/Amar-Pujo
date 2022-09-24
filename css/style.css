@@ -115,7 +115,7 @@ header{
     /* border: 2px solid black; */
     display: flex;
     align-items: center;
-    border: 1px solid lightskyblue;
+    border: 0.1rem solid lightskyblue;
     padding: 0.7rem 1.0rem;
     padding: 0.6rem 0rem;
     border-radius: 5.0rem;
@@ -128,7 +128,7 @@ header{
 
 
 .search-bar.active{
-    border: 1px solid lightblue;
+    border: 0.1rem solid lightblue;
     width: 46.1rem;
     height: 3.5rem;
     border-radius: 3.0rem;
@@ -235,7 +235,7 @@ section{
 
 .calender{
     /* border: 2px solid black; */
-    border: 1px solid lightblue;
+    border: 0.1rem solid lightblue;
     border-radius: 3.0rem;
     background: rgba(173, 216, 230, 0.212);
     height: 28.0rem;
@@ -244,13 +244,13 @@ section{
 }
 
 .swiper-slide-custom img {
-    border-radius: 30px !important;
-    height: 277px !important;
+    border-radius: 3.0rem !important;
+    height: 27.7rem !important;
     width: 100% !important;
 }
 
 .swiper-pagination-custom{
-    font-size: 12px !important;
+    font-size: 1.2rem !important;
 }
 
 .swiper-slide-custom {
@@ -280,7 +280,7 @@ section{
 /* ************************************************ location-section *************************************************** */
 .location-section
 {
-    border: 1px solid lightgray;
+    border: 0.1rem solid lightgray;
     width: 85%;
     margin-top: 7.0rem;
     height: 30.5rem;
@@ -294,7 +294,7 @@ section{
 }
 
 .location-content{
-    border: 1px solid lightblue;
+    border: 0.1rem solid lightblue;
     height: 20%;
     display: flex;
     justify-content: space-between;
@@ -323,8 +323,9 @@ section{
 .location-vid{
     /* border: 2px solid #1768f5; */
     height: 30.2rem;
-    justify-content: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .location-vid video{
@@ -702,7 +703,7 @@ section{
 }
 
 .footer-content a:hover{
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
     color: lightblue;
 }
 
@@ -814,15 +815,129 @@ section{
 
 
 /* ******************************************* media quaries *************************************** */
-@media(max-width: 998px){
+@media(max-width: 1285px){
+    .gradient-text {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 1265px){
+    .gradient-text {
+        font-size: 4.1rem;
+    }
+    .gradient-img img {
+        height: 30.5rem;
+    }
+    .location-vid video {
+        height: 25rem;
+    }
+}
+
+@media(max-width: 1080px){
     html{
         font-size: 55%;
     }
 }
 
+@media(max-width: 950px){
+    html{
+        font-size: 50%;
+    }
+}
 
-@media(max-width: 768px){
+@media(max-width: 863px){
     html{
         font-size: 45%;
+    }
+}
+
+@media(max-width: 776px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media(max-width: 776px){
+    html{
+        font-size: 37%;
+    }
+}
+
+@media(max-width: 635px){
+    html{
+        font-size: 32%;
+    }
+    .location-content input {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 546px){
+    html{
+        font-size: 30%;
+    }
+    .top-puja-logo img {
+        /* height: 27rem; */
+        display: none;
+    }
+    .top-puja-logo{
+        background-image: url('../images/dhak0.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70%;
+        width: 70%;
+    }
+}
+
+@media(max-width: 520px){
+    html{
+        font-size: 26%;
+    }
+}
+
+@media(max-width: 446px){
+    html{
+        font-size: 22%;
+    }
+}
+
+@media(max-width: 391px){
+    html{
+        font-size: 18%;
+    }
+    .gradient-content button {
+        border-radius: 5rem;
+        width: 15.3rem;
+        height: 5.3rem;
+    }
+    .gradient-content span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 307px){
+    html{
+        font-size: 15%;
+    }
+}
+
+@media(max-width: 260px){
+    html{
+        font-size: 13%;
+    }
+}
+
+@media(max-width: 260px){
+    html{
+        font-size: 11%;
+    }
+}
+
+@media(max-width: 189px){
+    html{
+        font-size: 9%;
     }
 }
