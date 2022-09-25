@@ -922,6 +922,14 @@ section{
     .gradient-content span {
         display: flex;
         justify-content: center;
+    }
+    .heading {
+        font-size: 5.3rem;
+    }
+    .sub-heading {
+        font-size: 1.8rem;
+    }
+        
 }
 
 /* @media(max-width: 391px){
