@@ -929,7 +929,33 @@ section{
     .sub-heading {
         font-size: 1.8rem;
     }
-        
+    .calendar-section {
+        width: 89%;    
+    }
+    .days p {
+        font-size: 5rem;
+    }
+    .calender {
+        height: 34rem;    
+    }
+    .swiper-slide-custom img {
+        height: 33.7rem !important;
+    }
+    .location-section {
+        margin-top: 12rem;
+        width: 95%;
+        grid-template-columns: 50% 42%;
+    }
+    .location-content {
+        height: 30%;
+        border-radius: 5rem;
+    }
+    .about-img img {
+        height: 32.4rem;
+    }
+    .about-content {
+        height: 43rem;
+    }
 }
 
 /* @media(max-width: 391px){
