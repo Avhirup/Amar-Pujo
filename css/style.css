@@ -858,7 +858,7 @@ section{
     }
 }
 
-@media(max-width: 776px){
+@media(max-width: 688px){
     html{
         font-size: 37%;
     }
@@ -899,11 +899,32 @@ section{
 
 @media(max-width: 446px){
     html{
-        font-size: 22%;
+        font-size: 21%;
     }
+    .image10 {
+        width: 9.6rem;
+        height: 9.6rem;
+    }
+    .navbar-content a {
+        font-size: 2.9rem;
+    }
+    .gradient{
+        margin-top: 3rem;
+        height: 25vw;
+    }
+    .gradient-img img {
+        height: 35.5rem;
+    }
+    .gradient-content button {
+        width: 18.3rem;
+        height: 6rem;
+    }
+    .gradient-content span {
+        display: flex;
+        justify-content: center;
 }
 
-@media(max-width: 391px){
+/* @media(max-width: 391px){
     html{
         font-size: 18%;
     }
@@ -917,28 +938,4 @@ section{
         align-items: center;
         justify-content: center;
     }
-}
-
-@media(max-width: 307px){
-    html{
-        font-size: 15%;
-    }
-}
-
-@media(max-width: 260px){
-    html{
-        font-size: 13%;
-    }
-}
-
-@media(max-width: 260px){
-    html{
-        font-size: 11%;
-    }
-}
-
-@media(max-width: 189px){
-    html{
-        font-size: 9%;
-    }
-}
+} */
